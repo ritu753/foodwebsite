@@ -1,0 +1,27 @@
+@use '../custom' as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.footer{
+    background: #000;
+    margin-top:20px;
+    height: 180px;
+    .share{
+        padding:40px 20px ;
+        margin-left: 23%;
+        button{
+            margin-right: 20px;
+            padding:8px 30px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+    }
+    p{
+        text-align: center;
+        font-size:18px;
+        color:#fff;
+        text-transform: capitalize;
+        padding-bottom: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+}

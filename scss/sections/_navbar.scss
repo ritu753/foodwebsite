@@ -1,0 +1,42 @@
+@use '../custom' as *;
+
+nav{
+    padding: 20px 0px;
+    z-index: 1000;
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+    background: #fff;
+    #menu-bar{
+        font-size: 3rem;
+        cursor: pointer;
+        color:#666;
+        border:.1rem solid #666;
+        border-radius: .3rem;
+        padding:.5rem 1.5rem;
+        display: none;
+      }
+    .logo{
+        margin-left:120px;
+        font-size: 25px;
+       font-weight: bolder;
+        color:#666;
+        i{
+            color: #ff3838 !important;
+            margin-right:4px;
+        }
+    }
+ 
+    .nav-items1{
+        margin-right: 120px;
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            color:#666;
+            font-size:20px;
+            margin-left: 20px;
+            &:hover{
+                color: #ff3838;
+            }
+
+        }
+    }
+}

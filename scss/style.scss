@@ -1,0 +1,15 @@
+@use 'custom';
+
+
+
+//import the sections
+
+@use 'sections/navbar';
+@use 'sections/header';
+@use 'sections/speciality';
+@use 'sections/popular';
+@use 'sections/works';
+@use 'sections/gallery';
+@use 'sections/review';
+@use 'sections/order';
+@use 'sections/footer';

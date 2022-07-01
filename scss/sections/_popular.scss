@@ -1,0 +1,59 @@
+@use '../custom' as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.popular{
+    .box-container{
+        margin:0px 120px;
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 10px;
+        .card{
+        position: relative;
+        overflow: hidden;
+         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+         border:.1rem solid rgba(0,0,0,.3);
+         border-radius: 20px;
+         img{
+            height:250px;
+            object-fit: cover;
+            width:90%;
+            border-radius: .5rem;
+            margin: 20px 20px;
+         }
+         .price{
+            position: absolute;
+            top:30px; 
+            left:30px;
+            background:#ff3838;
+            color:#fff;
+            font-size: 20px;
+            padding:5px 10px;
+            border-radius: 5px;
+          }
+          h3{
+            color:#333;
+            font-size: 25px;
+            padding-top: 10px;
+            text-transform: capitalize;
+            text-align:center;
+            font-weight:700;
+          }
+          .stars {
+            text-align: center;
+            margin-bottom: 12px;
+          i{
+            color:gold;
+            font-size: 15px;
+            padding:5px 2px;
+          }
+        }
+        button{
+          width: 140px;
+          margin-left:30%;
+          margin-bottom:20px;
+          border:2px solid #ff3838;
+        }
+        }
+    }
+}
+

@@ -1,0 +1,64 @@
+@use '../custom' as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.heading{
+    font-size: 40px;
+    font-weight:600;
+    color:#333;
+    span{
+        color:#ff3838;
+    }
+}
+
+.speciality{
+   
+    .box-container{
+        margin:0px 120px;
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 10px;
+        .card{
+        position: relative;
+        overflow: hidden;
+         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+         border:.1rem solid rgba(0,0,0,.3);
+         border-radius: 20px;
+         cursor: pointer;
+         &:hover {
+            .image{
+                top: 0;
+                transition:all .2s linear;
+               }
+        }
+        .image{
+        height:100%;
+         width:100%;
+         object-fit: cover;
+         position: absolute;
+         top:-100%; 
+         left:0;
+         border-radius: 20px;
+        }
+        .content{
+            padding: 40px 30px 10px 30px;
+            img{
+                margin-left: 40%;
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 28px;
+                color:#333;
+                font-weight: 700;
+
+            }
+            p{
+                font-size: 16px;
+                color: #666;
+                padding :15px 0;
+            }
+        }
+    }
+
+    }
+
+}

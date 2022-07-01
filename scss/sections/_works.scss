@@ -1,0 +1,22 @@
+@use '../custom' as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.works{
+    margin:0px 70px;
+    .work-info{
+        flex:1 1 25rem;
+        padding:1rem;
+        text-align: center;
+        
+        img{
+            border: 9px solid #333;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 30px;
+            font-weight:700;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+}
